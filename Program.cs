@@ -153,10 +153,23 @@
 //myTomato.color();
 
 //Interface
-C_Practice.Book myBook = new C_Practice.Book();
-myBook.Read();
+//C_Practice.Book myBook = new C_Practice.Book();
+//myBook.Read();
 
 //Multiple Inheritance
-C_Practice.DemoClass myObj = new C_Practice.DemoClass();
-myObj.myMethod();
-myObj.myOtherMethod();
+//C_Practice.DemoClass demoClassInstance = new C_Practice.DemoClass();
+//demoClassInstance.myMethod();
+//demoClassInstance.myOtherMethod();
+
+//Interface Inheritance
+//C_Practice.ImplementationClass myClass = new C_Practice.ImplementationClass();
+//myClass.Add(5, 6);
+//myClass.Sub(5, 6);
+
+//Ambiguity in Interface
+C_Practice.InterfaceClass myClass = new C_Practice.InterfaceClass();
+myClass.Test();
+C_Practice.IInterface1 myInterface1 = myClass;
+myInterface1.Show();
+C_Practice.IInterface2 myInterface2 = myClass;
+myInterface2.Show();

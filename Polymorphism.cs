@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_Practice
 {
-  class Animal  // Base class (parent) 
+    class Animal  // Base class (parent) 
     {
         public virtual void animalSound()
         {
